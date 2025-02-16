@@ -1,1 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla HTML Personalizable</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family:arial lineales
 
+, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.postimg.cc/B6GbdwyR/1736203010638.jpg'); /* Cambia esta URL por la del fondo deseado */
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Título sombreado */
+        header {
+            background: linear-gradient(90deg, #000000, #FF1414);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Menú desplegable */
+        nav {
+            background-color: #ff0508;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #7F111C;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #7F111C;
+            top: 50px;
+            min-width: 150px;
+            z-index: 1;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        /* Estilo para las imágenes en bloques */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .gallery-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item h3 {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .gallery-item p {
+            font-size: 14px;
+            color: #0000ff;
+        }
+
+        .whatsapp-button {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #FF0000; /* Botón de WhatsApp rojo */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #ff0000;
+            animation: pulse 1s infinite;
+        }
+
+        /* Animación de pulso para el botón de WhatsApp */
+        @keyframes pulse {
+            10% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Políticas de privacidad */
+        footer {
+            background-color: #060606;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Título sombreado -->
+    <header>
+     <h1>CUENTAS STREAMING JTL</h1>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav>
+        <ul>
+            <li><a href="#"></a></li>
+            <div class="gallery-item">
+            <img src="https://i.postimg.cc/B6vh65PB/Streaming-JTL.gif" alt="Imagen 2">
+            <li>
+                <body> <p style="color:#ff1902";><h1>👉DE INTERES👈</h1> </p> </body>
+                <ul>
+                    <li><a href="https://mega.nz/file/5r1lFLYR#im6SkSDE53j-TPqxmdsiEEEz6nDFhJdt8LYS7slyqmc">CURSO QPYTHON💎</a></li>
+                    <li><a href="https://mega.nz/file/Am0QUawJ#e33vhM5_NnpPtpqJo2HfgChCWmW7fqSWpvzIZ9xhv0k">CURSOS VIRTUALES PRO💎</a></li>
+                    <li><a href="https://wa.me/573207680836?text=*APRENDE%20A%20CREA%20Y%20EDITAR%20APLICACIONES%20PREGUNTA%20POR%20EL%20CURSO*">CURSO CREAR APLICACIONES💎</a></li>
+                </ul>
+            </li>
+            <body> <p style="color:#000000";><h3>TODO EL ENTRETENIMIENTO EN UN SOLO LUGAR</h3> </p> </body>
+        </ul>
+    </nav>
+
+    <!-- Galería de imágenes -->
+    <section class="gallery">
+        <!-- Bloque 1 -->
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/K8bLBhm0/IMG-20250109-WA0007.jpg" alt="NETFLIX PANTALLA">
+            <h3>NETFLIX</h3>
+            <p>PANTALLAS DISPONIBLES POR UN MES $12000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20PANTALLA%20DE%20NETFLIX%20$12000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/XYg5g1J4/IMG-20250109-WA0006.jpg" alt="Imagen 2">
+            <h3>NETFLIX CUENTAS</h3>
+            <p>CUENTAS NETFLIX CON 5 PERFILES POR UN MES $42500</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20NETFLIX%20CUENTA%20COMPLETA%20$42500*" target="_blank">COMPRAR</a>
+        </div>
+
+        <!-- Bloque 2 -->
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/nc49HSqB/IMG-20250106-WA0015.jpg" alt="Imagen 3">
+            <h3>AMAZON PRIME VIDEO</h3>
+            <p>AMAZON PRIME VIDEO PANTALLAS POR UN MES $8000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20PANTALLA%20PRIME%20VIDEO%20$8000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/CKLqrCBD/IMG-20250109-WA0005.jpg" alt="Imagen 4">
+            <h3>AMAZON PRIME VIDEO</h3>
+            <p>AMAZON PRIME VIDEO CUENTA COMPLETA POR UN MES $17000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20CUENTA%20COMPLETA%20PRIME%20VIDEO%20$16000*" target="_blank">COMPRAR</a>
+        </div>
+        
+  <div class="gallery-item">
+            <img src="https://i.postimg.cc/wvf9ykfq/IMG-20241020-WA0023.jpg" alt="Imagen 3">
+            <h3>DISNEY+ PANTALLA</h3>
+            <p>DISNEY+ PANTALLAS POR UN MES $8000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20PANTALLA%20DISNEY+%20$8000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/MGPjCcVL/IMG-20250109-WA0004.jpg" alt="Imagen 4">
+            <h3>DISNEY+ CUENTA</h3>
+            <p>DISNEY+ CUENTA COMPLETA POR UN MES $16000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20CUENTA%20DISNEY+%20COMPLETA%20$16000*" target="_blank">COMPRAR</a>
+        </div>   
+        
+  <div class="gallery-item">
+            <img src="https://i.postimg.cc/ncr3yZvC/magis-tv-app-full-1719934155.jpg" alt="Imagen 3">
+            <h3>MAGISTV</h3>
+            <p>MAGISTV POR UN MES $15000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20MAGISTV%20$15000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/g26N0Dtp/sdf.png" alt="Imagen 4">
+            <h3>EL PROFE.NET</h3>
+            <p>EL PROFE.NET UN MES $15000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20EL%20PROFE.NET%20$15000*" target="_blank">COMPRAR</a>
+        </div>         
+        
+   <div class="gallery-item">
+            <img src="https://i.postimg.cc/j5h8bSgJ/images.png" alt="Imagen 3">
+            <h3>PORNHUB</h3>
+            <p>PORNHUB POR UN MES $10000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20PORNHUB%20$10000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/QNBprq6J/IMG-20250109-WA0010.jpg" alt="Imagen 4">
+            <h3>CUENTA IPTV</h3>
+            <p>CUENTA IPTV 4 PERFILES POR UN MES $30000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20CUENTA%20IPTV%204%20PERFILES%20$30000*" target="_blank">COMPRAR</a>
+        </div>    
+        
+  <div class="gallery-item">
+            <img src="https://i.postimg.cc/xCBNdWsy/IMG-20250106-WA0011.jpg" alt="Imagen 3">
+            <h3>IPTV PANTALLA</h3>
+            <p>IPTV PANTALLA POR UN MES $15000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20IPTV%20PERFIL%20$15000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/Prs8nnvd/IMG-20250106-WA0013.jpg" alt="Imagen 4">
+            <h3>PARAMOUNT PLUS</h3>
+            <p>PARAMOUNT PLUS POR UN MES $8000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20PARAMOUT%20PLUS%20$8000*" target="_blank">COMPRAR</a>
+        </div>   
+        
+ <div class="gallery-item">
+            <img src="https://i.postimg.cc/Qtzxb11X/IMG-20250113-WA0050.jpg" alt="Imagen 3">
+            <h3>HBO MAX</h3>
+            <p>HBO MAX POR UN MES $8000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20HBO%20MAX%20$8000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/JnsBM1Qz/IMG-20250106-WA0012.jpg" alt="Imagen 4">
+            <h3>PLEX</h3>
+            <p>PLEX POR UN MES $8000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20PLEX%20$7500*" target="_blank">COMPRAR</a>
+        </div> 
+        
+  <div class="gallery-item">
+            <img src="https://i.postimg.cc/vZX1n1qm/IMG-20250106-WA0017.jpg" alt="Imagen 3">
+            <h3>VIX PLUS</h3>
+            <p>VIX PLUS POR UN MES $7000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20VIX%20PLUS%20$7000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/5tm41J8F/IMG-20250106-WA0045.jpg" alt="Imagen 4">
+            <h3>CANVA</h3>
+            <p>CANVA POR UN MES $7500</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20CANVA%20$7500*" target="_blank">COMPRAR</a>
+        </div>      
+        
+  <div class="gallery-item">
+            <img src="https://i.postimg.cc/HkJPyHxf/Apple-TV-mac-OS-20191.png" alt="Imagen 3">
+            <h3>APPLE TV</h3>
+            <p>APPLE TV POR UN MES $8000</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20APPLE%20TV%20$8000*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/5tjJcz9D/IMG-20250113-WA0056.jpg" alt="Imagen 4">
+            <h3>CRUNCHYROLL</h3>
+            <p>CRUNCHYROLL POR UN MES $7500</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20CRUNCHYROLL%20$7500*" target="_blank">COMPRAR</a>
+        </div>
+        
+   <div class="gallery-item">
+            <img src="https://i.postimg.cc/RVpDhqM7/Spotify-App-Logo-svg.png" alt="Imagen 3">
+            <h3>SPOTIFY 90 DIAS</h3>
+            <p>SPOTIFY 90 DIAS</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20SPOTIFY%2090%20DIAS*" target="_blank">COMPRAR</a>
+        </div>
+
+        <div class="gallery-item">
+            <img src="https://i.postimg.cc/tgTsNXwN/IMG-20250106-WA0018.jpg" alt="Imagen 4">
+            <h3>YOUTUBE PREMIUM</h3>
+            <p>YOUTUBE PREMIUM POR UN MES $8500</p>
+            <a class="whatsapp-button" href="https://wa.me/573207680836?text=*COMPRAR%20YOUTUBE%20PREMIUM%20$8500*" target="_blank">COMPRAR</a>
+        </div>                                            
+    </section>
+
+    <!-- Políticas de privacidad -->
+    <footer>
+        <p>© 2025 - POLÍTICAS DE PRIVACIDAD. <a href="https://www.e-droid.net/privacy.php?ida=3296817&idl=es">Ver más</a></p>
+    </footer>
+</body>
+              </html>
+              
